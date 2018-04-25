@@ -15,7 +15,7 @@
 
 * Repeat until done.
 
-The time between your repetitions can be called the "step size". Keep a small step size until you feel comfortable enough to increase it.
+The time between your repetitions can be called the **step size**. Keep a small step size until you feel comfortable enough to increase it.
 
 ## Arrange, Act, Assert
 
@@ -27,9 +27,15 @@ Each test has three parts:
 
 ## FAQ
 
+### What is a test?
+
+A test gives a successful result or a detailed error that specifies _where_ the error happened.
+
+Example: logging to console, manual testing with bug reports, jest test runner, bots, scripts.
+
 ### Why should I write tests?
 
-To get higher confidence in your code.
+To get higher confidence in your code. The idea is that lower confidence in code takes longer time to ship.
 
 ### Do I need to start with test before the code?
 

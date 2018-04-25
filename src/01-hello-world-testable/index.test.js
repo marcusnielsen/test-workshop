@@ -2,10 +2,11 @@ const { makeSayHello } = require("./index");
 
 test("makeSayHello", () => {
   // Arrange
-  let logMessages = [];
+
+  let mockMessageLog = [];
 
   const log = s => {
-    logMessages = [...logMessages, s];
+    mockMessageLog = [...mockMessageLog, s];
   };
 
   const deps = {
@@ -19,5 +20,5 @@ test("makeSayHello", () => {
   sayHello();
 
   // Assert
-  expect(logMessages).toEqual(["Hello world!", "Hello world!"]);
+  expect(mockMessageLog).toEqual(["Hello world!", "Hello world!"]);
 });
